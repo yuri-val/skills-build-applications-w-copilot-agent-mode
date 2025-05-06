@@ -39,4 +39,5 @@ class Command(BaseCommand):
         Workout.objects.create(name='Pushups', description='Do 20 pushups', suggested_for='beginners')
         Workout.objects.create(name='Plank', description='Hold plank for 1 minute', suggested_for='all')
 
-        self.stdout.write(self.style.SUCCESS('Test data successfully populated in octofit_db.'))
+        self.stdout.write(self.style.SUCCESS('Test data successfully populated in octofit_db.')) 
+        
