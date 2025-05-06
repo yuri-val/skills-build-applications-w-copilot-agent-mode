@@ -30,12 +30,18 @@ router.register(r'workouts', WorkoutViewSet)
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    codespace_url = "https://organic-space-winner-pjvjwvqj9r27x9g-8000.app.github.dev"
     return Response({
-        'users': '/api/users/',
-        'teams': '/api/teams/',
-        'activity': '/api/activity/',
-        'leaderboard': '/api/leaderboard/',
-        'workouts': '/api/workouts/',
+        'users': f'{codespace_url}/api/users/',
+        'teams': f'{codespace_url}/api/teams/',
+        'activity': f'{codespace_url}/api/activity/',
+        'leaderboard': f'{codespace_url}/api/leaderboard/',
+        'workouts': f'{codespace_url}/api/workouts/',
+        'local_users': 'http://localhost:8000/api/users/',
+        'local_teams': 'http://localhost:8000/api/teams/',
+        'local_activity': 'http://localhost:8000/api/activity/',
+        'local_leaderboard': 'http://localhost:8000/api/leaderboard/',
+        'local_workouts': 'http://localhost:8000/api/workouts/',
     })
 
 urlpatterns = [
