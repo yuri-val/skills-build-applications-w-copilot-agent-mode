@@ -1,0 +1,166 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0f8ff 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+/* OctoFit logo styling */
+.octofit-logo {
+  height: 48px;
+  margin-right: 1rem;
+  vertical-align: middle;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(70, 130, 180, 0.15);
+  background: #fff;
+  padding: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #4682b4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link, a, .navbar-brand, .nav-link {
+  color: #0f0be4 !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.App-link:hover, a:hover, .navbar-brand:hover, .nav-link:hover {
+  color: #4682b4 !important;
+  text-decoration: underline;
+}
+
+/* Navigation styles */
+nav.navbar {
+  background: linear-gradient(90deg, #4682b4 0%, #6a5acd 100%);
+  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.12);
+  padding: 0.75rem 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e7ff !important;
+  font-size: 1.1rem;
+  margin-right: 1.2rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:hover {
+  background: #fff;
+  color: #4682b4 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #6a5acd;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Table styles */
+table {
+  width: 95%;
+  margin: 1.5rem auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(70, 130, 180, 0.10);
+  border-radius: 10px;
+  overflow: hidden;
+}
+table th, table td {
+  border: 1px solid #d1d5db;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+table th {
+  background: linear-gradient(90deg, #4682b4 0%, #6a5acd 100%);
+  color: #fff;
+  font-size: 1.15rem;
+}
+table tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+table tr:hover {
+  background-color: #e0e7ff;
+}
+
+/* Button styles */
+button, .btn {
+  background: linear-gradient(90deg, #4682b4 0%, #6a5acd 100%);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(70, 130, 180, 0.10);
+  transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #6a5acd 0%, #4682b4 100%);
+  color: #fff;
+}
+
+/* Misc */
+.lead {
+  color: #4682b4;
+  font-size: 1.3rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.7rem;
+  }
+  table th, table td {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
